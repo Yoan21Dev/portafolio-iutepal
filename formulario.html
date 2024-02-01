@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario Avanzado</title>
+</head>
+<body align="center">
+    <h1>Formulario de Registro</h1>
+    <form action="datosformulario.html" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        <br>
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+        <label for="contrasena">Contraseña:</label>
+        <input type="password" id="contrasena" name="contrasena" required>
+        <br>
+        <label for="pais">País:</label>
+        <select id="pais" name="pais">
+            <option value="">-- Seleccione un país --</option>
+            <option value="venezuela">Venezuela</option>
+            <option value="colombia">Colombia</option>
+            <option value="mexico">México</option>
+            <option value="españa">España</option>
+        </select>
+        <br>
+        <label for="genero">Género:</label>
+        <input type="radio" id="hombre" name="genero" value="hombre">
+        <label for="hombre">Hombre</label>
+        <input type="radio" id="mujer" name="genero" value="mujer">
+        <label for="mujer">Mujer</label>
+        <br>
+        <label for="terminos">Acepto los términos y condiciones:</label>
+        <input type="checkbox" id="terminos" name="terminos" required>
+        <br>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
